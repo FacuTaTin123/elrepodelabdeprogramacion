@@ -1,0 +1,117 @@
+/* Fondo degradado azul a blanco */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0d47a1, #ffffff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Centrar título */
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contenedor general */
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Messi 👍 Valoyes en fila */
+.jugadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Tamaño imágenes */
+.jugadores img {
+    width: 220px;
+    transition: 0.3s;
+}
+
+.jugadores img:hover {
+    transform: scale(1.05);
+}
+
+/* 🔥 Caja donde aparece el emoji */
+.eleccion {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón */
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0d47a1;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #08306b;
+    transform: scale(1.05);
+}
+
+/* Select */
+select {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+
+    .jugadores {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .jugadores img {
+        width: 160px;
+    }
+
+    .eleccion {
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+}
